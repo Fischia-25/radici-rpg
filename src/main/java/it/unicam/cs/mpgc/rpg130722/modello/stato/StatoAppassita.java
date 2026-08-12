@@ -27,7 +27,6 @@ public class StatoAppassita implements StatoPianta{
         return "Appassita";
     }
 
-    // La pianta non è ancora corrotta, la purificazione non ha effetti
     @Override
     public void purifica(Pianta pianta){}
 

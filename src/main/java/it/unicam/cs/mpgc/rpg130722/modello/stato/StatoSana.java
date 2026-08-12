@@ -20,7 +20,6 @@ public class StatoSana implements StatoPianta {
         return "Sana";
     }
 
-    // Questi metodi non hanno effetti su una pianta sana
     @Override
     public void annaffia(Pianta pianta){}
     public void purifica(Pianta pianta){}

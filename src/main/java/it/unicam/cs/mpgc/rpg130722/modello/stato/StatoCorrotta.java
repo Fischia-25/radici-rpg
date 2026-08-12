@@ -3,8 +3,8 @@ package it.unicam.cs.mpgc.rpg130722.modello.stato;
 import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
 
 /**
- * Rappresenta lo stato peggiore, ormai annaffiarla non serve più
- * solo la purificazione ha effetto per curarla
+ * Rappresenta lo stato peggiore, ormai annaffiarla non serve più a niente
+ * solo la purificazione ha effetto sulla pianta
  */
 public class StatoCorrotta implements StatoPianta{
 
@@ -13,13 +13,13 @@ public class StatoCorrotta implements StatoPianta{
     {
         pianta.setStato(new StatoCurata());
     }
+
     @Override
     public String getDescrizione()
     {
-        return "Corrota";
+        return "Corrotta";
     }
 
-    // questi metodi non hanno effetto sulla pianta corrotta
     @Override
     public void annaffia(Pianta pianta){}
     public void trascura(Pianta pianta){}

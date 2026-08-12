@@ -7,11 +7,7 @@ public class Ricordo {
     private final String nomeDefunto;
     private final String storia;
 
-    /**
-     * Creo un nuovo ricordo, che sarà collegato a una sola pianta
-     * @param nomeDefunto è il nome della persona a cui il ricordo è legato
-     * @param storia è il testo narrativo associato al ricordo
-     */
+    // Creo un nuovo ricordo che sarà collegato a una sola pianta
     public Ricordo(String nomeDefunto, String storia)
     {
         this.nomeDefunto = nomeDefunto;
