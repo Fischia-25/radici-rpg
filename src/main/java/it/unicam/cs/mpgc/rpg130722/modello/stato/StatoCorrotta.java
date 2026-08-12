@@ -6,7 +6,7 @@ import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
  * Rappresenta lo stato peggiore, ormai annaffiarla non serve più a niente
  * solo la purificazione ha effetto sulla pianta
  */
-public class StatoCorrotta implements StatoPianta{
+public class StatoCorrotta extends StatoPiantaBase{
 
     @Override
     public void purifica(Pianta pianta)
@@ -19,9 +19,4 @@ public class StatoCorrotta implements StatoPianta{
     {
         return "Corrotta";
     }
-
-    @Override
-    public void annaffia(Pianta pianta){}
-    public void trascura(Pianta pianta){}
-
 }
