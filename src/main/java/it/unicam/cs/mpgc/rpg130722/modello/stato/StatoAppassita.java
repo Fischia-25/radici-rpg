@@ -7,6 +7,7 @@ import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
  * se curata la pianta migliora e torna sana
  * se trascurata la pianta peggiora e diventa corrotta
  */
+
 public class StatoAppassita extends StatoPiantaBase {
 
     @Override
