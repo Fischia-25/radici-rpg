@@ -11,20 +11,26 @@ import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
 public class StatoAppassita extends StatoPiantaBase {
 
     @Override
-    public void annaffia(Pianta pianta)
+    public void annaffia(Pianta p)
     {
-        pianta.setStato(new StatoSana());
+        p.setStato(new StatoSana());
     }
 
     @Override
-    public void trascura(Pianta pianta)
+    public void trascura(Pianta p)
     {
-        pianta.setStato(new StatoCorrotta());
+        p.setStato(new StatoCorrotta());
     }
 
     @Override
     public String getDescrizione()
     {
         return "Appassita";
+    }
+
+    @Override
+    double probabilitaDegrado()
+    {
+        return 0.3;
     }
 }

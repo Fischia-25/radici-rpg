@@ -10,9 +10,9 @@ import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
 public class StatoCorrotta extends StatoPiantaBase{
 
     @Override
-    public void purifica(Pianta pianta)
+    public void purifica(Pianta p)
     {
-        pianta.setStato(new StatoCurata());
+        p.setStato(new StatoCurata());
     }
 
     @Override

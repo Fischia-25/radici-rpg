@@ -3,8 +3,12 @@ package it.unicam.cs.mpgc.rpg130722.modello.entita;
 import it.unicam.cs.mpgc.rpg130722.modello.stato.StatoPianta;
 import it.unicam.cs.mpgc.rpg130722.modello.stato.StatoAppassita;
 
+import java.util.Random;
+
 // Rappresenta una pianta del giardino che è collegata a un ricordo
 public class Pianta {
+
+    private static final long serialVersionUID = 1L;
 
     private final String nome;
     private StatoPianta stato;
@@ -21,24 +25,28 @@ public class Pianta {
         this.stato = new StatoAppassita();
     }
 
+    // le azioni sono delegate agli stati
     public void annaffia()
     {
         stato.annaffia(this);
     }
-
     public void trascura()
     {
         stato.trascura(this);
     }
-
     public void purifica()
     {
         stato.purifica(this);
     }
 
-    public void setStato(StatoPianta stato)
+    public void setStato(StatoPianta s)
     {
-        this.stato = stato;
+        this.stato = s;
+    }
+
+    public void passaGiorno(Random r)
+    {
+        stato.passaGiorno(this, r);
     }
 
     public String getDescrizioneStato()
@@ -46,7 +54,7 @@ public class Pianta {
         return stato.getDescrizione();
     }
 
-    public String getNome()
+    public String getNomePianta()
     {
         return nome;
     }

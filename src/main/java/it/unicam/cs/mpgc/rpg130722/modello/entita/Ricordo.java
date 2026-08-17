@@ -1,8 +1,11 @@
 package it.unicam.cs.mpgc.rpg130722.modello.entita;
 
+import java.io.Serializable;
 
 // Rappresenta il ricordo collegato alla pianta nel giardino
-public class Ricordo {
+public class Ricordo implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private final String nomeDefunto;
     private final String storia;

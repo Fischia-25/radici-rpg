@@ -9,15 +9,21 @@ import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
 public class StatoSana extends StatoPiantaBase {
 
     @Override
-    public void trascura(Pianta pianta)
+    public void trascura(Pianta p)
     {
-        pianta.setStato(new StatoAppassita());
+        p.setStato(new StatoAppassita());
     }
 
     @Override
     public String getDescrizione()
     {
         return "Sana";
+    }
+
+    @Override
+    double probabilitaDegrado()
+    {
+        return 0.1;
     }
 
 }
