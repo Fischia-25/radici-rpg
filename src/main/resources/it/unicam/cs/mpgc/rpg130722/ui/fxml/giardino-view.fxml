@@ -22,7 +22,7 @@
 
     <bottom>
         <VBox spacing="10" style="-fx-padding: 10;">
-            <Label fx:id="statoSelezionata" text="Seleziona una pianta" />
+            <Label fx:id="statoSelezionato" text="Seleziona una pianta" />
             <HBox spacing="10">
                 <Button text="Annaffia" onAction="#onAnnaffia" />
                 <Button text="Trascura" onAction="#onTrascura" />
