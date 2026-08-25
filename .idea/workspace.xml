@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="651d02bd-a4dd-448a-8278-e4335a15aafb" name="Changes" comment="Stesura file README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="31" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="radici-rpg" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="radici-rpg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="radici-rpg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="radici-rpg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fischia-25&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Fischia-25/radici-rpg.git&quot;,
+    &quot;accountId&quot;: &quot;fd83f8f7-1ac1-4798-95bd-f756b950e988&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0260965172810983" />
+      <entry key="MS500" value="1.512094728843351" />
+      <entry key="S2" value="2.6005620991641836" />
+      <entry key="S5" value="3.891253436833193" />
+      <entry key="S10" value="4.741401356121131" />
+      <entry key="S30" value="5.523278969220816" />
+      <entry key="S60" value="5.75744413844378" />
+      <entry key="M2" value="5.936881673103413" />
+      <entry key="M5" value="6.279251336594062" />
+      <entry key="M10" value="6.621024794047685" />
+      <entry key="M15" value="7.11193940251748" />
+      <entry key="M30" value="13.854983620505239" />
+      <entry key="H1" value="61.2591310520718" />
+      <entry key="H2" value="197.37160465253882" />
+      <entry key="H4" value="409.1758357977256" />
+      <entry key="D1" value="888.9807689637486" />
+      <entry key="W1" value="1045.1992455054753" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="4.811259711396495E-239" />
+      <entry key="S30" value="3.6370806684272346E-80" />
+      <entry key="S60" value="1.9071131766453877E-40" />
+      <entry key="M2" value="1.3809898125418377E-20" />
+      <entry key="M5" value="1.1594035316399512E-8" />
+      <entry key="M10" value="1.6044283274157728E-4" />
+      <entry key="M15" value="0.006352175069919195" />
+      <entry key="M30" value="0.41765794606000345" />
+      <entry key="H1" value="4.218082582671152" />
+      <entry key="H2" value="15.322447663679268" />
+      <entry key="H4" value="34.28325720351166" />
+      <entry key="D1" value="90.85920494209088" />
+      <entry key="W1" value="112.69187181029471" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.030626622769787705" />
+      <entry key="MS500" value="0.6419382586518048" />
+      <entry key="S2" value="2.1869336608674748" />
+      <entry key="S5" value="3.697344223648689" />
+      <entry key="S10" value="4.6388095000895255" />
+      <entry key="S30" value="5.487721386502679" />
+      <entry key="S60" value="5.739485432323354" />
+      <entry key="M2" value="5.9278401215864776" />
+      <entry key="M5" value="6.275592371795759" />
+      <entry key="M10" value="6.619337470931261" />
+      <entry key="M15" value="7.116982696189011" />
+      <entry key="M30" value="14.26914493274329" />
+      <entry key="H1" value="65.46194484279006" />
+      <entry key="H2" value="212.66662736464156" />
+      <entry key="H4" value="443.4305975083331" />
+      <entry key="D1" value="979.8300284558622" />
+      <entry key="W1" value="1157.889466692662" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3HX8YATBVePvOnmOHEI51Gnc2T4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build radici-rpg.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PiantaTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [:it.unicam.cs.mpgc.rpg130722.MainApp.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [compileJava].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [init].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [updateDaemonJvm].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.radici-rpg [wrapper].executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.gradle-wrapper.jar.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\fedeo\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;ToolWindow.Hierarchy.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;junie.plugin.stays.banner.dismissed&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fedeo/Documents/Progetti/radici-rpg/gradle/wrapper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fedeo\Documents\Progetti\radici-rpg\gradle\wrapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fedeo\Documents\Progetti\radici-rpg\src\main\resources\it\unicam\cs\mpgc\rpg130722\ui\fxml" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.radici-rpg [build]">
+    <configuration name="radici-rpg [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="radici-rpg [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="radici-rpg [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="radici-rpg [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="radici-rpg [wrapper]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="wrapper" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.radici-rpg [build]" />
+        <item itemvalue="Gradle.radici-rpg [assemble]" />
+        <item itemvalue="Gradle.radici-rpg [clean]" />
+        <item itemvalue="Gradle.radici-rpg [run]" />
+        <item itemvalue="Gradle.radici-rpg [wrapper]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="651d02bd-a4dd-448a-8278-e4335a15aafb" name="Changes" comment="" />
+      <created>1786003098002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786003098002</updated>
+      <workItem from="1786003099007" duration="9556000" />
+      <workItem from="1786093186279" duration="1360000" />
+      <workItem from="1786094588584" duration="14759000" />
+      <workItem from="1786277966395" duration="1581000" />
+      <workItem from="1786456689240" duration="685000" />
+      <workItem from="1786457616019" duration="2388000" />
+      <workItem from="1786526354814" duration="1199000" />
+      <workItem from="1786529228634" duration="2619000" />
+      <workItem from="1786628288978" duration="4805000" />
+      <workItem from="1786694989348" duration="1200000" />
+      <workItem from="1786725039043" duration="641000" />
+      <workItem from="1786744216593" duration="2412000" />
+      <workItem from="1786747737645" duration="82000" />
+      <workItem from="1786800982694" duration="3941000" />
+      <workItem from="1786879401331" duration="1489000" />
+      <workItem from="1786951552439" duration="2766000" />
+      <workItem from="1786955857602" duration="1712000" />
+      <workItem from="1786958106171" duration="2367000" />
+      <workItem from="1786971576774" duration="7491000" />
+      <workItem from="1786979181009" duration="1534000" />
+      <workItem from="1787057948096" duration="982000" />
+      <workItem from="1787601968384" duration="48000" />
+      <workItem from="1787643976661" duration="5693000" />
+      <workItem from="1787664073242" duration="972000" />
+    </task>
+    <task id="LOCAL-00001" summary="Setuo iniziale:&#10;- Gradle&#10;- JavaFX">
+      <option name="closed" value="true" />
+      <created>1786031811673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1786031811673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Setuo iniziale:&#10;- Gradle&#10;- JavaFX">
+      <option name="closed" value="true" />
+      <created>1786032416219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1786032416219</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Setuo iniziale:&#10;- Gradle&#10;- JavaFX">
+      <option name="closed" value="true" />
+      <created>1786034338749</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786034338749</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Setuo iniziale:&#10;- Gradle&#10;- JavaFX">
+      <option name="closed" value="true" />
+      <created>1786034547337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1786034547337</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Setup iniziale:&#10;- Gradle&#10;- JavaFX">
+      <option name="closed" value="true" />
+      <created>1786093964841</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1786093964841</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implementazione interfaccia per la gestione degli stati della pianta">
+      <option name="closed" value="true" />
+      <created>1786106784110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786106784110</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ampliamento e sviluppo classi e interfaccia con la logica di funzionamento base">
+      <option name="closed" value="true" />
+      <created>1786137862547</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1786137862547</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ampliamento e sviluppo classe Ricordo">
+      <option name="closed" value="true" />
+      <created>1786278751531</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1786278751531</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Sistemazione commenti">
+      <option name="closed" value="true" />
+      <created>1786531281145</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1786531281145</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Sistemazione commenti e classi">
+      <option name="closed" value="true" />
+      <created>1786531826150</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1786531826150</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Sistemazione commenti e classi">
+      <option name="closed" value="true" />
+      <created>1786633521275</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1786633521275</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Creazione package e classi da implementare">
+      <option name="closed" value="true" />
+      <created>1786635863774</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1786635863774</updated>
+    </task>
+    <task id="LOCAL-00013" summary="implementazione PiantaFactory.java">
+      <option name="closed" value="true" />
+      <created>1786974235721</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1786974235721</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implementazione salvataggio su file">
+      <option name="closed" value="true" />
+      <created>1786975087722</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1786975087722</updated>
+    </task>
+    <task id="LOCAL-00015" summary="controller e ui">
+      <option name="closed" value="true" />
+      <created>1786976914026</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1786976914026</updated>
+    </task>
+    <task id="LOCAL-00016" summary="implementazione MainApp">
+      <option name="closed" value="true" />
+      <created>1786980661183</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1786980661183</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Implementazione Service, Factory e Controller">
+      <option name="closed" value="true" />
+      <created>1787644326297</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1787644326297</updated>
+    </task>
+    <task id="LOCAL-00018" summary="giardino implementa Serializable">
+      <option name="closed" value="true" />
+      <created>1787648191654</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1787648191654</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Stesura file README.md">
+      <option name="closed" value="true" />
+      <created>1787652192841</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1787652192841</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Setup iniziale:&#10;- Gradle&#10;- JavaFX" />
+    <MESSAGE value="Setuo iniziale:&#10;- Gradle&#10;- JavaFX" />
+    <MESSAGE value="implementazione interfaccia per la gestione degli stati della pianta" />
+    <MESSAGE value="Ampliamento e sviluppo classi e interfaccia con la logica di funzionamento base" />
+    <MESSAGE value="Ampliamento e sviluppo classe Ricordo" />
+    <MESSAGE value="Sistemazione commenti" />
+    <MESSAGE value="Sistemazione commenti e classi" />
+    <MESSAGE value="Creazione package e classi da implementare" />
+    <MESSAGE value="implementazione PiantaFactory.java" />
+    <MESSAGE value="Implementazione salvataggio su file" />
+    <MESSAGE value="controller e ui" />
+    <MESSAGE value="implementazione MainApp" />
+    <MESSAGE value="Implementazione Service, Factory e Controller" />
+    <MESSAGE value="giardino implementa Serializable" />
+    <MESSAGE value="Stesura file README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stesura file README.md" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
