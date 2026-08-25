@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651d02bd-a4dd-448a-8278-e4335a15aafb" name="Changes" comment="Stesura file README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="651d02bd-a4dd-448a-8278-e4335a15aafb" name="Changes" comment="Fix configurazione Gradle: usa wrapper invece di installazione locale">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Giocatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Giardino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Giardino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/service/GiardinoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/service/GiardinoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/ui/controllers/GiardinoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/ui/controllers/GiardinoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/it/unicam/cs/mpgc/rpg130722/ui/fxml/giardino-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/it/unicam/cs/mpgc/rpg130722/ui/fxml/giardino-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +66,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,61 +94,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0260965172810983" />
-      <entry key="MS500" value="1.512094728843351" />
-      <entry key="S2" value="2.6005620991641836" />
-      <entry key="S5" value="3.891253436833193" />
-      <entry key="S10" value="4.741401356121131" />
-      <entry key="S30" value="5.523278969220816" />
-      <entry key="S60" value="5.75744413844378" />
-      <entry key="M2" value="5.936881673103413" />
-      <entry key="M5" value="6.279251336594062" />
-      <entry key="M10" value="6.621024794047685" />
-      <entry key="M15" value="7.11193940251748" />
-      <entry key="M30" value="13.854983620505239" />
-      <entry key="H1" value="61.2591310520718" />
-      <entry key="H2" value="197.37160465253882" />
-      <entry key="H4" value="409.1758357977256" />
-      <entry key="D1" value="888.9807689637486" />
-      <entry key="W1" value="1045.1992455054753" />
+      <entry key="MS100" value="1.0000000860648868" />
+      <entry key="MS500" value="1.0386336019037796" />
+      <entry key="S2" value="1.4433447882698167" />
+      <entry key="S5" value="1.7277564164852568" />
+      <entry key="S10" value="2.05118861782919" />
+      <entry key="S30" value="5.472339275281671" />
+      <entry key="S60" value="10.121711409113423" />
+      <entry key="M2" value="14.66191963506601" />
+      <entry key="M5" value="19.20489872771901" />
+      <entry key="M10" value="23.229147654570706" />
+      <entry key="M15" value="26.202169441274563" />
+      <entry key="M30" value="33.210931237814904" />
+      <entry key="H1" value="61.6844033720693" />
+      <entry key="H2" value="169.32364976888755" />
+      <entry key="H4" value="373.54451871051185" />
+      <entry key="D1" value="898.3833486471535" />
+      <entry key="W1" value="1078.334645481869" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="4.811259711396495E-239" />
-      <entry key="S30" value="3.6370806684272346E-80" />
-      <entry key="S60" value="1.9071131766453877E-40" />
-      <entry key="M2" value="1.3809898125418377E-20" />
-      <entry key="M5" value="1.1594035316399512E-8" />
-      <entry key="M10" value="1.6044283274157728E-4" />
-      <entry key="M15" value="0.006352175069919195" />
-      <entry key="M30" value="0.41765794606000345" />
-      <entry key="H1" value="4.218082582671152" />
-      <entry key="H2" value="15.322447663679268" />
-      <entry key="H4" value="34.28325720351166" />
-      <entry key="D1" value="90.85920494209088" />
-      <entry key="W1" value="112.69187181029471" />
+      <entry key="S2" value="1.825192362866013E-198" />
+      <entry key="S5" value="9.366755033833896E-80" />
+      <entry key="S10" value="4.0007662680722295E-40" />
+      <entry key="S30" value="1.14598503051424E-13" />
+      <entry key="S60" value="4.774736105617327E-7" />
+      <entry key="M2" value="9.765614136468613E-4" />
+      <entry key="M5" value="0.09471703776038726" />
+      <entry key="M10" value="0.4352301027225038" />
+      <entry key="M15" value="0.7238604723127711" />
+      <entry key="M30" value="1.2909584294980452" />
+      <entry key="H1" value="3.487111717368047" />
+      <entry key="H2" value="12.14193338091739" />
+      <entry key="H4" value="30.095089211420095" />
+      <entry key="D1" value="89.93723800728907" />
+      <entry key="W1" value="114.1676789500328" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.030626622769787705" />
-      <entry key="MS500" value="0.6419382586518048" />
-      <entry key="S2" value="2.1869336608674748" />
-      <entry key="S5" value="3.697344223648689" />
-      <entry key="S10" value="4.6388095000895255" />
-      <entry key="S30" value="5.487721386502679" />
-      <entry key="S60" value="5.739485432323354" />
-      <entry key="M2" value="5.9278401215864776" />
-      <entry key="M5" value="6.275592371795759" />
-      <entry key="M10" value="6.619337470931261" />
-      <entry key="M15" value="7.116982696189011" />
-      <entry key="M30" value="14.26914493274329" />
-      <entry key="H1" value="65.46194484279006" />
-      <entry key="H2" value="212.66662736464156" />
-      <entry key="H4" value="443.4305975083331" />
-      <entry key="D1" value="979.8300284558622" />
-      <entry key="W1" value="1157.889466692662" />
+      <entry key="MS100" value="0.02368307164036691" />
+      <entry key="MS500" value="0.48539034369382056" />
+      <entry key="S2" value="1.1627599118487462" />
+      <entry key="S5" value="1.5765063797255958" />
+      <entry key="S10" value="1.9451310066789447" />
+      <entry key="S30" value="5.349664289969691" />
+      <entry key="S60" value="10.013634870968682" />
+      <entry key="M2" value="14.588363764934515" />
+      <entry key="M5" value="19.261191640548425" />
+      <entry key="M10" value="23.640269933535688" />
+      <entry key="M15" value="26.90754032881271" />
+      <entry key="M30" value="34.49003302245666" />
+      <entry key="H1" value="65.15826286822261" />
+      <entry key="H2" value="181.4436748597166" />
+      <entry key="H4" value="403.61443253359977" />
+      <entry key="D1" value="988.3106635346535" />
+      <entry key="W1" value="1192.5006390593173" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -213,7 +218,7 @@
       <recent name="C:\Users\fedeo\Documents\Progetti\radici-rpg\src\main\resources\it\unicam\cs\mpgc\rpg130722\ui\fxml" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.radici-rpg [build]">
+  <component name="RunManager" selected="Gradle.radici-rpg [run]">
     <configuration name="radici-rpg [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -341,10 +346,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.radici-rpg [run]" />
         <item itemvalue="Gradle.radici-rpg [build]" />
         <item itemvalue="Gradle.radici-rpg [assemble]" />
         <item itemvalue="Gradle.radici-rpg [clean]" />
-        <item itemvalue="Gradle.radici-rpg [run]" />
         <item itemvalue="Gradle.radici-rpg [wrapper]" />
       </list>
     </recent_temporary>
@@ -388,6 +393,8 @@
       <workItem from="1787601968384" duration="48000" />
       <workItem from="1787643976661" duration="5693000" />
       <workItem from="1787664073242" duration="972000" />
+      <workItem from="1787665124651" duration="3218000" />
+      <workItem from="1787696304968" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="Setuo iniziale:&#10;- Gradle&#10;- JavaFX">
       <option name="closed" value="true" />
@@ -541,7 +548,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787652192841</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fix configurazione Gradle: usa wrapper invece di installazione locale">
+      <option name="closed" value="true" />
+      <created>1787665355548</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1787665355548</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +626,8 @@
     <MESSAGE value="Implementazione Service, Factory e Controller" />
     <MESSAGE value="giardino implementa Serializable" />
     <MESSAGE value="Stesura file README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stesura file README.md" />
+    <MESSAGE value="Fix configurazione Gradle: usa wrapper invece di installazione locale" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix configurazione Gradle: usa wrapper invece di installazione locale" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

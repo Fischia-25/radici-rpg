@@ -1,5 +1,6 @@
 package it.unicam.cs.mpgc.rpg130722.ui.controllers;
 
+import it.unicam.cs.mpgc.rpg130722.modello.entita.Giocatore;
 import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
 import it.unicam.cs.mpgc.rpg130722.service.GiardinoService;
 import javafx.fxml.FXML;
@@ -8,6 +9,7 @@ import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 
 import java.io.IOException;
+import java.util.function.Function;
 
 public class GiardinoController {
 
@@ -16,6 +18,9 @@ public class GiardinoController {
 
     @FXML
     private Label statoSelezionato;
+
+    @FXML
+    private Label statoGiocatore;
 
     private GiardinoService service;
 
@@ -43,6 +48,7 @@ public class GiardinoController {
     {
         this.service = service;
         aggiornaLista();
+        aggiornaEtichettaGiocatore();
     }
 
     private void aggiornaLista()
@@ -53,19 +59,25 @@ public class GiardinoController {
     @FXML
     private void onAnnaffia()
     {
-        eseguiSelezione(Pianta::annaffia);
+        eseguiSelezione(service::annaffia);
     }
 
     @FXML
     private void onTrascura()
     {
-        eseguiSelezione(Pianta::trascura);
+        Pianta selezionata = listaPiante.getSelectionModel().getSelectedItem();
+        if (selezionata == null)
+            return;
+
+        service.trascura(selezionata);
+        listaPiante.refresh();
+        aggiornaEtichetta(selezionata);
     }
 
     @FXML
     private void onPurifica()
     {
-        eseguiSelezione(Pianta::purifica);
+        eseguiSelezione(service::purifica);
     }
 
     @FXML
@@ -73,7 +85,8 @@ public class GiardinoController {
     {
         service.avanzaGiorno();
         listaPiante.refresh();
-        aggiornaEtichetta (listaPiante.getSelectionModel().getSelectedItem());
+        aggiornaEtichetta(listaPiante.getSelectionModel().getSelectedItem());
+        aggiornaEtichettaGiocatore();
     }
 
     @FXML
@@ -88,15 +101,23 @@ public class GiardinoController {
         }
     }
 
-    private void eseguiSelezione (java.util.function.Consumer<Pianta> azione)
+    private void eseguiSelezione (Function<Pianta, Boolean> azione)
     {
         Pianta selezionata = listaPiante.getSelectionModel().getSelectedItem();
-        if (selezionata != null)
+        if (selezionata == null)
+            return;
+
+        boolean eseguita = azione.apply(selezionata);
+        if (!eseguita)
         {
-            azione.accept(selezionata);
-            listaPiante.refresh();
-            aggiornaEtichetta(selezionata);
+            statoSelezionato.setText("Energia insufficiente per questa azione");
+            aggiornaEtichettaGiocatore();
+            return;
         }
+
+        listaPiante.refresh();
+        aggiornaEtichetta(selezionata);
+        aggiornaEtichettaGiocatore();
     }
 
     private void aggiornaEtichetta (Pianta p)
@@ -105,6 +126,16 @@ public class GiardinoController {
                 "Seleziona una pianta" :
                 p.getNomePianta() +
                         ": " + p.getDescrizioneStato()
+        );
+    }
+
+    private void aggiornaEtichettaGiocatore()
+    {
+        Giocatore g = service.getGiocatore();
+        statoGiocatore.setText(
+                "Livello " + g.getLivello() +
+                        " — Energia: " + g.getEnergia() + "/" + g.energiaMassima() +
+                        " — Esperienza: " + g.getEsperienza()
         );
     }
 }
