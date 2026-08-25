@@ -10,9 +10,10 @@ public class Giardino implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private final List<Pianta> piante = new ArrayList<>();;
+    private final List<Pianta> piante = new ArrayList<>();
 
-    public void aggiungiPianta(Pianta p) {
+    public void aggiungiPianta(Pianta p)
+    {
         piante.add(p);
     }
 

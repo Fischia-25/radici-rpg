@@ -3,10 +3,11 @@ package it.unicam.cs.mpgc.rpg130722.modello.entita;
 import it.unicam.cs.mpgc.rpg130722.modello.stato.StatoPianta;
 import it.unicam.cs.mpgc.rpg130722.modello.stato.StatoAppassita;
 
+import java.io.Serializable;
 import java.util.Random;
 
 // Rappresenta una pianta del giardino che è collegata a un ricordo
-public class Pianta {
+public class Pianta implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
