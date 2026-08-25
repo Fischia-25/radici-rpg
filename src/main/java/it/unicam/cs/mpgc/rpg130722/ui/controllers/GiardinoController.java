@@ -1,7 +1,7 @@
 package it.unicam.cs.mpgc.rpg130722.ui.controllers;
 
 import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
-import it.unicam.cs.mpgc.rpg130722.modello.service.GiardinoService;
+import it.unicam.cs.mpgc.rpg130722.service.GiardinoService;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;

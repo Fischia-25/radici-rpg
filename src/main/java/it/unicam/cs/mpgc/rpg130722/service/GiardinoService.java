@@ -1,4 +1,4 @@
-package it.unicam.cs.mpgc.rpg130722.modello.service;
+package it.unicam.cs.mpgc.rpg130722.service;
 
 import it.unicam.cs.mpgc.rpg130722.modello.entita.Giardino;
 import it.unicam.cs.mpgc.rpg130722.persistenza.GiardinoRepository;

@@ -1,6 +1,6 @@
 package it.unicam.cs.mpgc.rpg130722;
 
-import it.unicam.cs.mpgc.rpg130722.modello.service.GiardinoService;
+import it.unicam.cs.mpgc.rpg130722.service.GiardinoService;
 import it.unicam.cs.mpgc.rpg130722.persistenza.FileGiardinoRepository;
 import it.unicam.cs.mpgc.rpg130722.persistenza.GiardinoRepository;
 import it.unicam.cs.mpgc.rpg130722.ui.controllers.GiardinoController;
