@@ -12,11 +12,11 @@ import java.util.Random;
  */
 public interface StatoPianta extends Serializable {
 
-    void annaffia(Pianta p);
+    boolean annaffia(Pianta p);
 
-    void trascura(Pianta p);
+    boolean trascura(Pianta p);
 
-    void purifica(Pianta p);
+    boolean purifica(Pianta p);
 
     void passaGiorno(Pianta p, Random r);
 

@@ -7,13 +7,22 @@ import java.util.Random;
 public abstract class StatoPiantaBase implements StatoPianta {
 
     @Override
-    public void annaffia(Pianta p) {}
+    public boolean annaffia(Pianta p)
+    {
+        return false;
+    }
 
     @Override
-    public void trascura(Pianta p) {}
+    public boolean trascura(Pianta p)
+    {
+        return false;
+    }
 
     @Override
-    public void purifica(Pianta p) {}
+    public boolean purifica(Pianta p)
+    {
+        return false;
+    }
 
     @Override
     public void passaGiorno(Pianta p, Random r)

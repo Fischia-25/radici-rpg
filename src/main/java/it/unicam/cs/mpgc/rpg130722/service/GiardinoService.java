@@ -7,6 +7,7 @@ import it.unicam.cs.mpgc.rpg130722.persistenza.GiardinoRepository;
 
 import java.io.IOException;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class GiardinoService {
 
@@ -42,9 +43,15 @@ public class GiardinoService {
         return nuovo;
     }
 
-    public Giardino getGiardino() { return giardino; }
+    public Giardino getGiardino()
+    {
+        return giardino;
+    }
 
-    public Giocatore getGiocatore() { return giardino.getGiocatore(); }
+    public Giocatore getGiocatore()
+    {
+        return giardino.getGiocatore();
+    }
 
     public boolean annaffia(Pianta p)
     {
@@ -56,27 +63,34 @@ public class GiardinoService {
         return eseguiAzione(p, COSTO_PURIFICA, p::purifica);
     }
 
-    public void trascura(Pianta p)
+    public boolean trascura(Pianta p)
     {
-        p.trascura(); // azione passiva, nessun costo di energia
+        return eseguiAzione(p, 0, p::trascura);
     }
 
-    private boolean eseguiAzione(Pianta p, int costo, Runnable azione)
+    private boolean eseguiAzione(Pianta p, int costo, Supplier<Boolean> azione)
     {
+        if (!p.getAzioneDisponibileOggi())
+        return false;
+
         Giocatore giocatore = giardino.getGiocatore();
         if (!giocatore.puoEseguireAzione(costo))
             return false;
 
         String statoPrima = p.getDescrizioneStato();
+        boolean eseguita = azione.get();
+        if (!eseguita)
+            return false;
+
+        p.consumaAzioneGiornaliera();
         giocatore.consumaEnergia(costo);
-        azione.run();
         assegnaXpSeCompletata(p, statoPrima, giocatore);
         return true;
     }
 
-    private void assegnaXpSeCompletata(Pianta pianta, String statoPrima, Giocatore giocatore)
+    private void assegnaXpSeCompletata(Pianta p, String statoPrima, Giocatore giocatore)
     {
-        if (!"Curata".equals(statoPrima) && "Curata".equals(pianta.getDescrizioneStato()))
+        if (!"Curata".equals(statoPrima) && "Curata".equals(p.getDescrizioneStato()))
             giocatore.guadagnaEsperienza(XP_PIANTA_CURATA);
     }
 

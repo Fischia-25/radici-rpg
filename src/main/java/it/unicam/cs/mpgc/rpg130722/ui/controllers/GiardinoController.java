@@ -4,17 +4,24 @@ import it.unicam.cs.mpgc.rpg130722.modello.entita.Giocatore;
 import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
 import it.unicam.cs.mpgc.rpg130722.service.GiardinoService;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.ListView;
+import javafx.scene.control.Tooltip;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.shape.Circle;
+import javafx.util.Duration;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.function.Function;
 
 public class GiardinoController {
 
+    private static final int COLONNE = 4;
+
     @FXML
-    private ListView<Pianta> listaPiante;
+    private GridPane grigliaPiante;
 
     @FXML
     private Label statoSelezionato;
@@ -23,70 +30,117 @@ public class GiardinoController {
     private Label statoGiocatore;
 
     private GiardinoService service;
+    private Pianta piantaSelezionata;
 
-    @FXML
-    public void initialize()
-    {
-        listaPiante.setCellFactory(lv -> new ListCell<>() {
-            @Override
-            protected void updateItem (Pianta pianta, boolean vuoto)
-            {
-                super.updateItem(pianta, vuoto);
-                setText(vuoto ||
-                        pianta == null ?
-                        null : pianta.getNomePianta() +
-                        " - " +
-                        pianta.getDescrizioneStato());
-            }
-        });
-
-        listaPiante.getSelectionModel().selectedItemProperty().addListener((
-                obs, vecchia, nuova) -> aggiornaEtichetta(nuova));
-    }
-
-    public void impostaService (GiardinoService service)
+    public void impostaService(GiardinoService service)
     {
         this.service = service;
-        aggiornaLista();
+        ricostruisciGriglia();
         aggiornaEtichettaGiocatore();
+        aggiornaEtichettaSelezione();
     }
 
-    private void aggiornaLista()
+    private void ricostruisciGriglia()
     {
-        listaPiante.getItems().setAll(service.getGiardino().getPiante());
+        grigliaPiante.getChildren().clear();
+
+        List<Pianta> piante = service.getGiardino().getPiante();
+        for (int i = 0; i < piante.size(); i++)
+        {
+            Pianta p = piante.get(i);
+            VBox tessera = creaTessera(p);
+            grigliaPiante.add(tessera, i % COLONNE, i / COLONNE);
+        }
+    }
+
+    private VBox creaTessera(Pianta p)
+    {
+        Label nomeLabel = new Label(p.getNomePianta());
+        nomeLabel.getStyleClass().add("tessera-nome");
+
+        Label statoLabel = new Label(p.getDescrizioneStato());
+        statoLabel.getStyleClass().add("tessera-stato");
+
+        Circle indicatore = new Circle(4);
+        indicatore.getStyleClass().add(p.getAzioneDisponibileOggi()
+                ? "indicatore-azione-disponibile"
+                : "indicatore-azione-usata");
+
+        VBox tessera = new VBox(4, nomeLabel, statoLabel, indicatore);
+        tessera.setAlignment(Pos.CENTER);
+        tessera.getStyleClass().addAll("tessera-pianta", classeColoreStato(p));
+
+        Tooltip tooltip = new Tooltip(descrizioneCompleta(p));
+        tooltip.setShowDelay(Duration.millis(150));
+        tooltip.setWrapText(true);
+        tooltip.setMaxWidth(260);
+        Tooltip.install(tessera, tooltip);
+
+        tessera.setOnMouseClicked(e -> selezionaPianta(p, tessera));
+
+        if (p == piantaSelezionata)
+            tessera.getStyleClass().add("tessera-selezionata");
+
+        return tessera;
+    }
+
+    private String classeColoreStato(Pianta p)
+    {
+        return switch (p.getDescrizioneStato())
+        {
+            case "Sana" -> "stato-sana";
+            case "Appassita" -> "stato-appassita";
+            case "Corrotta" -> "stato-corrotta";
+            case "Curata" -> "stato-curata";
+            default -> "stato-appassita";
+        };
+    }
+
+    private String descrizioneCompleta(Pianta p)
+    {
+        String azioneOggi = p.getAzioneDisponibileOggi()
+                ? "Azione disponibile oggi"
+                : "Hai già agito su questa pianta oggi";
+
+        return p.getNomePianta() + "\n" +
+                "Stato: " + p.getDescrizioneStato() + "\n" +
+                azioneOggi + "\n\n" +
+                "In memoria di: " + p.getRicordoCollegato().getNomeDefunto() + "\n" +
+                p.getRicordoCollegato().getStoria();
+    }
+
+    private void selezionaPianta(Pianta p, VBox tessera)
+    {
+        piantaSelezionata = p;
+        ricostruisciGriglia(); // ridisegna per aggiornare l'evidenziazione
+        aggiornaEtichettaSelezione();
     }
 
     @FXML
     private void onAnnaffia()
     {
-        eseguiSelezione(service::annaffia);
+        eseguiSuSelezionata(service::annaffia);
     }
 
     @FXML
     private void onTrascura()
     {
-        Pianta selezionata = listaPiante.getSelectionModel().getSelectedItem();
-        if (selezionata == null)
-            return;
-
-        service.trascura(selezionata);
-        listaPiante.refresh();
-        aggiornaEtichetta(selezionata);
+        eseguiSuSelezionata(service::trascura);
     }
 
     @FXML
     private void onPurifica()
     {
-        eseguiSelezione(service::purifica);
+        eseguiSuSelezionata(service::purifica);
     }
 
     @FXML
     private void onNuovoGiorno()
     {
         service.avanzaGiorno();
-        listaPiante.refresh();
-        aggiornaEtichetta(listaPiante.getSelectionModel().getSelectedItem());
+        ricostruisciGriglia();
         aggiornaEtichettaGiocatore();
+        aggiornaEtichettaSelezione();
     }
 
     @FXML
@@ -101,32 +155,32 @@ public class GiardinoController {
         }
     }
 
-    private void eseguiSelezione (Function<Pianta, Boolean> azione)
+    private void eseguiSuSelezionata(Function<Pianta, Boolean> azione)
     {
-        Pianta selezionata = listaPiante.getSelectionModel().getSelectedItem();
-        if (selezionata == null)
+        if (piantaSelezionata == null)
+        {
+            statoSelezionato.setText("Seleziona prima una pianta dalla griglia");
             return;
+        }
 
-        boolean eseguita = azione.apply(selezionata);
+        boolean eseguita = azione.apply(piantaSelezionata);
         if (!eseguita)
         {
-            statoSelezionato.setText("Energia insufficiente per questa azione");
+            statoSelezionato.setText("Azione non disponibile per questa pianta oggi");
             aggiornaEtichettaGiocatore();
             return;
         }
 
-        listaPiante.refresh();
-        aggiornaEtichetta(selezionata);
+        ricostruisciGriglia();
         aggiornaEtichettaGiocatore();
+        aggiornaEtichettaSelezione();
     }
 
-    private void aggiornaEtichetta (Pianta p)
+    private void aggiornaEtichettaSelezione()
     {
-        statoSelezionato.setText(p == null ?
-                "Seleziona una pianta" :
-                p.getNomePianta() +
-                        ": " + p.getDescrizioneStato()
-        );
+        statoSelezionato.setText(piantaSelezionata == null
+                ? "Seleziona una pianta"
+                : piantaSelezionata.getNomePianta() + ": " + piantaSelezionata.getDescrizioneStato());
     }
 
     private void aggiornaEtichettaGiocatore()

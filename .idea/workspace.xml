@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651d02bd-a4dd-448a-8278-e4335a15aafb" name="Changes" comment="Fix configurazione Gradle: usa wrapper invece di installazione locale">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Giocatore.java" afterDir="false" />
+    <list default="true" id="651d02bd-a4dd-448a-8278-e4335a15aafb" name="Changes" comment="Implementazione sistema livelli, esperienza ed energia">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/it/unicam/cs/mpgc/rpg130722/ui/fxml/giardino.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Giardino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Giardino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Pianta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/entita/Pianta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoAppassita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoAppassita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoCorrotta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoCorrotta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoPianta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoPianta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoPiantaBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoPiantaBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoSana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/modello/stato/StatoSana.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/service/GiardinoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/service/GiardinoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/ui/controllers/GiardinoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unicam/cs/mpgc/rpg130722/ui/controllers/GiardinoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/it/unicam/cs/mpgc/rpg130722/ui/fxml/giardino-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/it/unicam/cs/mpgc/rpg130722/ui/fxml/giardino-view.fxml" afterDir="false" />
@@ -94,61 +100,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000860648868" />
-      <entry key="MS500" value="1.0386336019037796" />
-      <entry key="S2" value="1.4433447882698167" />
-      <entry key="S5" value="1.7277564164852568" />
-      <entry key="S10" value="2.05118861782919" />
-      <entry key="S30" value="5.472339275281671" />
-      <entry key="S60" value="10.121711409113423" />
-      <entry key="M2" value="14.66191963506601" />
-      <entry key="M5" value="19.20489872771901" />
-      <entry key="M10" value="23.229147654570706" />
-      <entry key="M15" value="26.202169441274563" />
-      <entry key="M30" value="33.210931237814904" />
-      <entry key="H1" value="61.6844033720693" />
-      <entry key="H2" value="169.32364976888755" />
-      <entry key="H4" value="373.54451871051185" />
-      <entry key="D1" value="898.3833486471535" />
-      <entry key="W1" value="1078.334645481869" />
+      <entry key="MS100" value="1.7422829204077273" />
+      <entry key="MS500" value="2.059698632197694" />
+      <entry key="S2" value="3.0191455509504017" />
+      <entry key="S5" value="4.436263424363313" />
+      <entry key="S10" value="5.597698070752249" />
+      <entry key="S30" value="7.674449448762714" />
+      <entry key="S60" value="9.045651918230007" />
+      <entry key="M2" value="11.120123987599104" />
+      <entry key="M5" value="23.98311067027588" />
+      <entry key="M10" value="47.05961846033842" />
+      <entry key="M15" value="63.145053522039774" />
+      <entry key="M30" value="89.83604642237705" />
+      <entry key="H1" value="128.22007591819636" />
+      <entry key="H2" value="235.8147844832147" />
+      <entry key="H4" value="440.59580476524997" />
+      <entry key="D1" value="980.9264133569159" />
+      <entry key="W1" value="1168.7222628422955" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.825192362866013E-198" />
-      <entry key="S5" value="9.366755033833896E-80" />
-      <entry key="S10" value="4.0007662680722295E-40" />
-      <entry key="S30" value="1.14598503051424E-13" />
-      <entry key="S60" value="4.774736105617327E-7" />
-      <entry key="M2" value="9.765614136468613E-4" />
-      <entry key="M5" value="0.09471703776038726" />
-      <entry key="M10" value="0.4352301027225038" />
-      <entry key="M15" value="0.7238604723127711" />
-      <entry key="M30" value="1.2909584294980452" />
-      <entry key="H1" value="3.487111717368047" />
-      <entry key="H2" value="12.14193338091739" />
-      <entry key="H4" value="30.095089211420095" />
-      <entry key="D1" value="89.93723800728907" />
-      <entry key="W1" value="114.1676789500328" />
+      <entry key="MS100" value="5.492941579271401E-284" />
+      <entry key="MS500" value="2.2282350224971012E-57" />
+      <entry key="S2" value="6.870530137833179E-15" />
+      <entry key="S5" value="2.1617033838606423E-6" />
+      <entry key="S10" value="0.001470391002318764" />
+      <entry key="S30" value="0.1186965122913819" />
+      <entry key="S60" value="0.41642074708016125" />
+      <entry key="M2" value="0.9412084789889271" />
+      <entry key="M5" value="1.7890396372669155" />
+      <entry key="M10" value="2.3930160461817302" />
+      <entry key="M15" value="2.7775857678955695" />
+      <entry key="M30" value="3.5354841832332418" />
+      <entry key="H1" value="5.6095985440281355" />
+      <entry key="H2" value="13.705589649380467" />
+      <entry key="H4" value="31.31538320371384" />
+      <entry key="D1" value="92.04057027900954" />
+      <entry key="W1" value="117.00460702468817" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.02368307164036691" />
-      <entry key="MS500" value="0.48539034369382056" />
-      <entry key="S2" value="1.1627599118487462" />
-      <entry key="S5" value="1.5765063797255958" />
-      <entry key="S10" value="1.9451310066789447" />
-      <entry key="S30" value="5.349664289969691" />
-      <entry key="S60" value="10.013634870968682" />
-      <entry key="M2" value="14.588363764934515" />
-      <entry key="M5" value="19.261191640548425" />
-      <entry key="M10" value="23.640269933535688" />
-      <entry key="M15" value="26.90754032881271" />
-      <entry key="M30" value="34.49003302245666" />
-      <entry key="H1" value="65.15826286822261" />
-      <entry key="H2" value="181.4436748597166" />
-      <entry key="H4" value="403.61443253359977" />
-      <entry key="D1" value="988.3106635346535" />
-      <entry key="W1" value="1192.5006390593173" />
+      <entry key="MS100" value="0.7791892661917449" />
+      <entry key="MS500" value="1.1437119826732383" />
+      <entry key="S2" value="2.4980982142801613" />
+      <entry key="S5" value="4.137135273079697" />
+      <entry key="S10" value="5.412346237290943" />
+      <entry key="S30" value="7.692365931237862" />
+      <entry key="S60" value="9.387407647560623" />
+      <entry key="M2" value="11.998667724686529" />
+      <entry key="M5" value="25.70810430001143" />
+      <entry key="M10" value="49.393656659304604" />
+      <entry key="M15" value="65.87158420706437" />
+      <entry key="M30" value="93.3365263104215" />
+      <entry key="H1" value="133.80363743196654" />
+      <entry key="H2" value="249.49263456667853" />
+      <entry key="H4" value="471.88319142533976" />
+      <entry key="D1" value="1072.9564263852594" />
+      <entry key="W1" value="1285.725081785001" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -394,7 +400,10 @@
       <workItem from="1787643976661" duration="5693000" />
       <workItem from="1787664073242" duration="972000" />
       <workItem from="1787665124651" duration="3218000" />
-      <workItem from="1787696304968" duration="325000" />
+      <workItem from="1787696304968" duration="498000" />
+      <workItem from="1787841227401" duration="393000" />
+      <workItem from="1788111891272" duration="248000" />
+      <workItem from="1788116324385" duration="1467000" />
     </task>
     <task id="LOCAL-00001" summary="Setuo iniziale:&#10;- Gradle&#10;- JavaFX">
       <option name="closed" value="true" />
@@ -556,7 +565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787665355548</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implementazione sistema livelli, esperienza ed energia">
+      <option name="closed" value="true" />
+      <created>1787696792753</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1787696792753</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +644,8 @@
     <MESSAGE value="giardino implementa Serializable" />
     <MESSAGE value="Stesura file README.md" />
     <MESSAGE value="Fix configurazione Gradle: usa wrapper invece di installazione locale" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix configurazione Gradle: usa wrapper invece di installazione locale" />
+    <MESSAGE value="Implementazione sistema livelli, esperienza ed energia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementazione sistema livelli, esperienza ed energia" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,9 +9,10 @@ import it.unicam.cs.mpgc.rpg130722.modello.entita.Pianta;
 public class StatoSana extends StatoPiantaBase {
 
     @Override
-    public void trascura(Pianta p)
+    public boolean trascura(Pianta p)
     {
         p.setStato(new StatoAppassita());
+        return true;
     }
 
     @Override

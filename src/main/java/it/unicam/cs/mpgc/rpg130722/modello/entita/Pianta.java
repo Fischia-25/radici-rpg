@@ -14,6 +14,7 @@ public class Pianta implements Serializable {
     private final String nome;
     private StatoPianta stato;
     private final Ricordo ricordoCollegato;
+    private boolean azioneDisponibileOggi;
 
     /**
      * Creo una nuova pianta sempre nello stato iniziale di appassita.
@@ -24,20 +25,21 @@ public class Pianta implements Serializable {
         this.nome = nome;
         this.ricordoCollegato = ricordoCollegato;
         this.stato = new StatoAppassita();
+        this.azioneDisponibileOggi = true;
     }
 
     // le azioni sono delegate agli stati
-    public void annaffia()
+    public boolean annaffia()
     {
-        stato.annaffia(this);
+        return stato.annaffia(this);
     }
-    public void trascura()
+    public boolean trascura()
     {
-        stato.trascura(this);
+        return stato.trascura(this);
     }
-    public void purifica()
+    public boolean purifica()
     {
-        stato.purifica(this);
+        return stato.purifica(this);
     }
 
     public void setStato(StatoPianta s)
@@ -48,6 +50,16 @@ public class Pianta implements Serializable {
     public void passaGiorno(Random r)
     {
         stato.passaGiorno(this, r);
+    }
+
+    public void consumaAzioneGiornaliera()
+    {
+        azioneDisponibileOggi = false;
+    }
+
+    public void ripristinaAzioneGiornaliera()
+    {
+        azioneDisponibileOggi = true;
     }
 
     public String getDescrizioneStato()
@@ -64,5 +76,8 @@ public class Pianta implements Serializable {
     {
         return ricordoCollegato;
     }
-
+    public boolean getAzioneDisponibileOggi()
+    {
+        return azioneDisponibileOggi;
+    }
 }

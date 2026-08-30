@@ -1,0 +1,80 @@
+.intestazione {
+    -fx-padding: 12;
+    -fx-spacing: 4;
+    -fx-background-color: #2f3b2f;
+}
+
+.titolo {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f1f1f1;
+}
+
+.stato-giocatore {
+    -fx-font-size: 13px;
+    -fx-text-fill: #cfd8cf;
+}
+
+.scroll-griglia {
+    -fx-background-color: #1e241e;
+}
+
+.griglia-piante {
+    -fx-padding: 16;
+    -fx-background-color: #1e241e;
+}
+
+.pannello-azioni {
+    -fx-padding: 12;
+    -fx-background-color: #2f3b2f;
+}
+
+.etichetta-selezione {
+    -fx-text-fill: #f1f1f1;
+    -fx-font-size: 13px;
+}
+
+.tessera-pianta {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-border-color: transparent;
+    -fx-padding: 10;
+    -fx-pref-width: 120;
+    -fx-pref-height: 100;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+}
+
+.tessera-pianta:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 6, 0.3, 0, 2);
+}
+
+.tessera-selezionata {
+    -fx-border-color: #ffffff;
+    -fx-border-width: 3;
+}
+
+.tessera-nome {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+}
+
+.tessera-stato {
+    -fx-font-size: 11px;
+    -fx-text-fill: #1a1a1a;
+}
+
+.indicatore-azione-usata {
+    -fx-fill: #b03030;
+}
+
+.indicatore-azione-disponibile {
+    -fx-fill: #2f7d32;
+}
+
+.stato-sana        { -fx-background-color: #a8d5a3; }
+.stato-appassita    { -fx-background-color: #e8d27a; }
+.stato-corrotta     { -fx-background-color: #b98cd6; }
+.stato-curata       { -fx-background-color: #f0c94e; }

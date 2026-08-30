@@ -41,7 +41,10 @@ public class Giardino implements Serializable {
     public void nuovoGiorno(Random r)
     {
         for (Pianta p : piante)
+        {
             p.passaGiorno(r);
+            p.ripristinaAzioneGiornaliera();
+        }
         giocatore.riposaNuovoGiorno();
     }
 }
